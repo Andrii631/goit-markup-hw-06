@@ -453,7 +453,7 @@ body{
 
 
 /* footer section */
-.footer-list{
+.footer-cont{
     display: flex;
     gap: 120px;
 }
@@ -528,11 +528,9 @@ body{
     box-sizing: content-box;
     align-items: center;
     transition: background-color var(--tra);
-}
-
-.footer-but-icon{
     position: relative;
 }
+
 .footer-icon{
     position: absolute;
     top: 50%;    
@@ -638,6 +636,9 @@ body{
     transform: translate(-50%, -50%) scale(0);
 }
 .modal-close {
+    position: absolute;
+    top: 24px;
+    right:24px;
     background-color: var(--footer-text-color);
     border: 1px solid var(--modal-bor);
     border-radius: 50%;
@@ -646,16 +647,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     transition: background-color var(--tra), fill var(--tra);
-    margin-bottom: 24px;
 
 }
 .modal-text{
     font-weight: 500;
     text-align: center;
     color: var(--primary-text-color);
-    margin-bottom: 14px;
+    margin-bottom: 8px;
+    margin-top: 48px;
 }
 .modal-form {
 }
@@ -665,19 +665,17 @@ body{
     width: 100%;
     height: 40px;
     background-color: transparent;
-    padding: 8px 16px;
+    padding: 8px 16px 8px 38px;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     outline: transparent;
     transition: border-color var(--tra) ;
 }
-.modal-input-cursor{
-    padding-left: 38px;
-}
 .modal-textarea{
     height: 120px;
     resize: none;
+    padding-left: 16px;
 }
 .modal-textarea::placeholder{
     font-size: 12px;
@@ -705,12 +703,12 @@ body{
     letter-spacing: 0.01em;
     color: var(--cust-icon-bor);
     margin-bottom: 4px;
+    margin-top: 8px;
     margin-right: auto;
+    position: relative;
+    outline: transparent;
 }
 .modal-input-icon{
-    position: relative;
-    margin-bottom: 8px;
-    outline: transparent;
 }
 .modal-icon{
     position: absolute;
